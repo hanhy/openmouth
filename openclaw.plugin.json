@@ -1,0 +1,70 @@
+{
+  "id": "openmouth",
+  "name": "OpenMouth",
+  "description": "Voice & Text conversation channel for OpenClaw - WebSocket-based real-time communication with STT/TTS support",
+  "channels": ["openmouth"],
+  "skills": [],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "port": {
+        "type": "number",
+        "default": 8765,
+        "description": "WebSocket server port"
+      },
+      "host": {
+        "type": "string",
+        "default": "127.0.0.1",
+        "description": "WebSocket server bind address"
+      },
+      "authToken": {
+        "type": "string",
+        "description": "Authentication token for client connections (optional)"
+      },
+      "stt": {
+        "type": "object",
+        "properties": {
+          "provider": {
+            "type": "string",
+            "enum": ["whisper", "google", "azure", "none"],
+            "default": "whisper"
+          },
+          "apiKey": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string",
+            "default": "zh-CN"
+          }
+        }
+      },
+      "tts": {
+        "type": "object",
+        "properties": {
+          "provider": {
+            "type": "string",
+            "enum": ["openai", "elevenlabs", "edge", "none"],
+            "default": "edge"
+          },
+          "apiKey": {
+            "type": "string"
+          },
+          "voice": {
+            "type": "string",
+            "default": "alloy"
+          },
+          "speed": {
+            "type": "number",
+            "default": 1.0
+          }
+        }
+      },
+      "maxSessionDuration": {
+        "type": "number",
+        "default": 3600,
+        "description": "Maximum session duration in seconds"
+      }
+    }
+  }
+}

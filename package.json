@@ -1,0 +1,32 @@
+{
+  "name": "@hanhy/openmouth",
+  "version": "0.1.0",
+  "description": "Voice & Text conversation channel for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "channel",
+    "voice",
+    "speech"
+  ],
+  "author": "Harry",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/ws": "^8.5.10",
+    "typescript": "^5.3.0"
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  }
+}
