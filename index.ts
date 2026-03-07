@@ -46,25 +46,6 @@ const plugin = {
     // Register the channel
     api.registerChannel({ plugin: openmouthPlugin });
 
-    // Register RPC methods for server control
-    api.registerGatewayRpc("openmouth.start", async (config) => {
-      await startServer(config, api);
-      return { status: "started", port: config?.port || 8765 };
-    });
-
-    api.registerGatewayRpc("openmouth.stop", async () => {
-      await stopServer();
-      return { status: "stopped" };
-    });
-
-    api.registerGatewayRpc("openmouth.status", async () => {
-      return { 
-        status: "running",
-        port: 8765,
-        sessions: [] // TODO: implement session tracking
-      };
-    });
-
     // Register agent tools
     api.registerTool({
       name: "openmouth_broadcast",
@@ -84,7 +65,6 @@ const plugin = {
       }
     });
 
-    api.log.info("[openmouth] Plugin registered successfully");
   },
 };
 
