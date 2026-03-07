@@ -4,9 +4,10 @@ package-lock.json
 
 # Build output
 dist/
-*.js
 *.d.ts
 !index.ts
+!start-server.js
+!test-client.js
 
 # IDE
 .vscode/
