@@ -55,6 +55,24 @@ npm install
 
 ## 客户端示例
 
+### 🌐 Web 客户端（推荐）
+
+启动服务器后，在浏览器中打开：
+
+```bash
+# 启动服务器
+node serve-web.js
+
+# 访问
+http://localhost:8765
+```
+
+Web 客户端支持：
+- 💬 文字消息
+- 🎤 语音录制
+- 📊 连接状态显示
+- 🎨 美观的 UI
+
 ### JavaScript/Node.js
 
 ```javascript

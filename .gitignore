@@ -8,6 +8,11 @@ dist/
 !index.ts
 !start-server.js
 !test-client.js
+!serve-web.js
+
+# Public folder (except index.html)
+public/*
+!public/index.html
 
 # IDE
 .vscode/

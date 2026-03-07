@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
+    "serve": "node serve-web.js",
     "test": "echo \"No tests yet\""
   },
   "keywords": [
