@@ -337,3 +337,24 @@ MIT
 - **GitHub:** https://github.com/hanhy/openmouth
 - **OpenClaw:** https://github.com/openclaw/openclaw
 - **Docs:** https://docs.openclaw.ai
+
+---
+
+## 状态 / Status
+
+- **当前版本：** v0.1.0
+- **状态：** 开发中 (暂停)
+- **最后更新：** 2026-03-08
+- **License:** MIT
+
+---
+
+## 📝 更新日志 / Changelog
+
+### v0.1.0 (2026-03-08)
+- ✅ 初始版本发布
+- ✅ OpenClaw 插件框架
+- ✅ WebSocket 服务器
+- ✅ Web 客户端
+- ✅ 中英双语文档
+- ⏸️ 项目暂停（等待后续开发）
